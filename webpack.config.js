@@ -71,6 +71,12 @@ module.exports = {
             },
         ]
     },
+    resolve: {
+        alias: { //配置别名
+            "@": path.resolve(__dirname, 'src/'),
+            "Templates": path.resolve(__dirname, 'src/components/')
+        }
+    },
     plugins: [
         //css分离插件 
         new ExtractTextPlugin('css/style.css'),
@@ -78,7 +84,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'index.ejs',
-            title:'anyao_html',
+            title: 'anyao_html',
             "files": {
                 "css": ["style.css"],
                 "js": ["pt_bundle.js"],

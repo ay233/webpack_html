@@ -23,10 +23,12 @@ publick
 # 配置文件
 postcss.config.js:
 css插件系统配置
-
-## 注意：
-
-由于我自己本地装了less编译插件，所以引入的是css，以防引起不必要的麻烦
-
 #  webpack官网
 https://webpack.js.org
+
+## 注意：
+由于我自己本地装了less编译插件，所以引入的是css，以防引起不必要的麻烦
+该版本以.html为模板
+
+## 待更新：
+未解决各类dom事件问题、未解决路由问题、组件通讯
